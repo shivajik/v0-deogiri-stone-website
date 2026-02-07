@@ -128,6 +128,17 @@ export function Footer() {
           <p>
             {"© 2026 Deogiri Stone. All rights reserved."}
           </p>
+          <p>
+            {"Designed by "}
+            <a 
+              href="https://ksoftsolution.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-primary underline underline-offset-4"
+            >
+              KSoft Solution
+            </a>
+          </p>
           <div className="flex gap-6">
             <Link href="/contact" className="transition-colors hover:text-primary">
               Privacy Policy
