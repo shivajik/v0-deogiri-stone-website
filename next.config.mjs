@@ -6,6 +6,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: [
+    '*.replit.dev',
+    '*.repl.co',
+    '*.replit.app',
+    '127.0.0.1',
+  ],
 }
 
 export default nextConfig
