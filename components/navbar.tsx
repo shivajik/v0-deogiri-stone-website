@@ -154,12 +154,15 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMobile}
-                className={`group flex items-center justify-between rounded-xl px-5 py-4 text-lg font-medium transition-all duration-300 ${
+                className={`group flex items-center justify-between rounded-xl px-5 py-4 text-lg font-medium ${
                   pathname === link.href
                     ? "bg-primary/15 text-primary"
                     : "text-[hsl(30,20%,96%)] hover:bg-[hsl(28,40%,58%)]/5 hover:text-primary"
                 }`}
                 style={{
+                  transitionProperty: "all",
+                  transitionDuration: "300ms",
+                  transitionTimingFunction: "ease",
                   transitionDelay: isMobileOpen ? `${index * 50 + 100}ms` : "0ms",
                   opacity: isMobileOpen ? 1 : 0,
                   transform: isMobileOpen ? "translateX(0)" : "translateX(-20px)",
@@ -183,8 +186,11 @@ export function Navbar() {
           {/* Phone */}
           <a
             href="tel:+919028208883"
-            className="flex items-center gap-3 rounded-xl px-5 py-4 text-[hsl(30,20%,96%)] transition-colors hover:bg-[hsl(28,40%,58%)]/5"
+            className="flex items-center gap-3 rounded-xl px-5 py-4 text-[hsl(30,20%,96%)] hover:bg-[hsl(28,40%,58%)]/5"
             style={{
+              transitionProperty: "all",
+              transitionDuration: "300ms",
+              transitionTimingFunction: "ease",
               transitionDelay: isMobileOpen ? "350ms" : "0ms",
               opacity: isMobileOpen ? 1 : 0,
               transform: isMobileOpen ? "translateX(0)" : "translateX(-20px)",
@@ -207,10 +213,12 @@ export function Navbar() {
           <div
             className="mt-auto pt-6"
             style={{
+              transitionProperty: "all",
+              transitionDuration: "300ms",
+              transitionTimingFunction: "ease",
               transitionDelay: isMobileOpen ? "400ms" : "0ms",
               opacity: isMobileOpen ? 1 : 0,
               transform: isMobileOpen ? "translateY(0)" : "translateY(10px)",
-              transition: "all 0.3s ease",
             }}
           >
             <Button
