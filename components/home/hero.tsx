@@ -29,23 +29,23 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center lg:px-8">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 pt-24 pb-16 text-center lg:px-8 lg:pt-20">
         <div className="mx-auto max-w-4xl">
           {/* Badge */}
           <div
-            className={`mb-8 inline-flex items-center gap-2 rounded-full border border-card/20 bg-card/10 px-4 py-2 backdrop-blur-sm transition-all duration-700 ${
+            className={`mb-6 inline-flex items-center gap-2 rounded-full border border-card/20 bg-card/10 px-3 py-1.5 backdrop-blur-sm transition-all duration-700 sm:mb-8 sm:px-4 sm:py-2 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-card/90">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-primary animate-pulse" />
+            <span className="text-xs font-medium text-card/90 sm:text-sm">
               Trusted by 500+ Contractors Across India
             </span>
           </div>
 
           {/* Main Heading */}
           <h1
-            className={`font-serif text-5xl leading-tight tracking-tight text-card md:text-6xl lg:text-7xl transition-all duration-1000 delay-200 ${
+            className={`font-serif text-4xl leading-tight tracking-tight text-card sm:text-5xl md:text-6xl lg:text-7xl transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -55,7 +55,7 @@ export function Hero() {
 
           {/* Subtitle */}
           <p
-            className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-card/70 md:text-xl transition-all duration-1000 delay-400 ${
+            className={`mx-auto mt-4 max-w-2xl text-base leading-relaxed text-card/70 sm:mt-6 sm:text-lg md:text-xl transition-all duration-1000 delay-400 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -66,14 +66,14 @@ export function Hero() {
 
           {/* CTAs */}
           <div
-            className={`mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center transition-all duration-1000 delay-500 ${
+            className={`mt-8 flex w-full flex-col items-center gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:justify-center sm:gap-4 transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
             <Button
               asChild
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-6 text-base font-semibold"
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-6 text-base font-semibold sm:w-auto"
             >
               <Link href="/contact">
                 Get Free Consultation
@@ -84,7 +84,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="border-card/30 text-card hover:bg-card/10 rounded-lg px-8 py-6 text-base bg-transparent"
+              className="w-full border-card/30 text-card hover:bg-card/10 rounded-lg px-8 py-6 text-base bg-transparent sm:w-auto"
             >
               <a href="tel:+919028208883">
                 <Phone className="mr-2 h-5 w-5" />
@@ -96,7 +96,7 @@ export function Hero() {
 
         {/* Stats Bar */}
         <div
-          className={`mt-20 grid w-full max-w-3xl grid-cols-3 gap-8 border-t border-card/10 pt-10 transition-all duration-1000 delay-700 ${
+          className={`mt-12 grid w-full max-w-3xl grid-cols-3 gap-4 border-t border-card/10 pt-8 sm:mt-20 sm:gap-8 sm:pt-10 transition-all duration-1000 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -106,10 +106,10 @@ export function Hero() {
             { value: "100%", label: "Quality Assured" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="font-serif text-3xl text-primary md:text-4xl">
+              <div className="font-serif text-2xl text-primary sm:text-3xl md:text-4xl">
                 {stat.value}
               </div>
-              <div className="mt-1 text-xs uppercase tracking-wider text-card/50 md:text-sm">
+              <div className="mt-1 text-[10px] uppercase tracking-wider text-card/50 sm:text-xs md:text-sm">
                 {stat.label}
               </div>
             </div>
