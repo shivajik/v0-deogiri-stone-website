@@ -39,7 +39,7 @@ export function Hero() {
           >
             <span className="h-2 w-2 shrink-0 rounded-full bg-primary animate-pulse" />
             <span className="text-xs font-medium text-card/90 sm:text-sm">
-              Trusted by 500+ Contractors Across India
+              Trusted by 500+ Contractors Across Maharashtra
             </span>
           </div>
 
@@ -49,7 +49,7 @@ export function Hero() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Building India{"'"}s Future,{" "}
+            Building Maharashtra{"'"}s Future,{" "}
             <span className="text-primary">One Stone</span> at a Time
           </h1>
 
