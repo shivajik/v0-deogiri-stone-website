@@ -107,42 +107,32 @@ export function AboutContent() {
                 Our Story
               </div>
               <h2 className="font-serif text-3xl leading-tight text-foreground md:text-4xl text-balance">
-                From Humble Beginnings to Industry Leadership
+                About Deogiri Stone
               </h2>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                Deogiri Stone was founded with a simple yet powerful vision: to provide
-                the highest quality construction aggregates that builders can rely on.
-                What began as a small quarry operation has grown into one of the most
-                trusted aggregate suppliers in Maharashtra.
+                Deogiri Stone Product Pvt. Ltd. was incorporated under company act 1956 on 5 April 2007 in Aurangabad Maharashtra with intention to provide excellent quality aggregate and sand for industrial, commercial, Government & Residential projects.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                We understand how crucial it is to have access to high-quality materials
-                for any building project. That is why we offer a wide range of aggregates
-                to suit all your needs, from sand and gravel to crushed stone and recycled
-                aggregates. We take pride in our commitment to providing our customers with
-                exceptional service, competitive pricing, and timely deliveries.
+                Our activity is to manufacture stone aggregates of different sizes and Artificial Sand (P-Sand and M-Sand). We have located our state of art plant facility and mine at Bidkin Aurangabad. Technically we are competent to supply all type of aggregates with excellent quality of graded aggregates produced with advanced technology for the industry.
               </p>
-              <div className="mt-8 grid grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="flex items-center justify-center gap-2">
-                    <Users className="h-5 w-5 text-primary" />
-                    <span className="font-serif text-2xl text-foreground">50+</span>
+              <div className="mt-10 grid gap-8 md:grid-cols-2">
+                <div className="rounded-2xl bg-primary/5 p-8">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                    <Eye className="h-6 w-6 text-primary" />
                   </div>
-                  <div className="mt-1 text-xs text-muted-foreground">Team Members</div>
+                  <h3 className="font-serif text-xl text-foreground">Our Vision</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    To meet customer requirement & satisfaction by providing service on time, every time, while maintaining high standards of quality management system.
+                  </p>
                 </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center gap-2">
-                    <Building2 className="h-5 w-5 text-primary" />
-                    <span className="font-serif text-2xl text-foreground">500+</span>
+                <div className="rounded-2xl bg-primary/5 p-8">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                    <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <div className="mt-1 text-xs text-muted-foreground">Projects</div>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center gap-2">
-                    <TrendingUp className="h-5 w-5 text-primary" />
-                    <span className="font-serif text-2xl text-foreground">15+</span>
-                  </div>
-                  <div className="mt-1 text-xs text-muted-foreground">Years</div>
+                  <h3 className="font-serif text-xl text-foreground">Our Mission</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    To manufacture high quality products that are fit-to-use and durable, through employee motivation, participation and continuous improvement in our systems.
+                  </p>
                 </div>
               </div>
             </div>
