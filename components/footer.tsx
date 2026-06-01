@@ -30,8 +30,8 @@ export function Footer() {
                 alt="Deogiri Stone Products Pvt. Ltd."
                 width={0}
                 height={0}
-                sizes="180px"
-                className="h-16 w-auto object-contain"
+                sizes="220px"
+                className="h-24 w-auto object-contain"
                 style={{ width: "auto" }}
               />
             </div>

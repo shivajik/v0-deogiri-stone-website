@@ -57,8 +57,8 @@ export function Navbar() {
             alt="Deogiri Stone Products Pvt. Ltd."
             width={0}
             height={0}
-            sizes="160px"
-            className="h-20 w-auto object-contain"
+            sizes="200px"
+            className="h-28 w-auto object-contain"
             style={{ width: "auto" }}
             priority
           />
