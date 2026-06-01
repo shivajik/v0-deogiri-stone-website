@@ -110,10 +110,13 @@ export function AboutContent() {
                 About Deogiri Stone
               </h2>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                Deogiri Stone Product Pvt. Ltd. was incorporated under company act 1956 on 5 April 2007 in Aurangabad Maharashtra with intention to provide excellent quality aggregate and sand for industrial, commercial, Government & Residential projects.
+                Deogiri Stone Product Pvt. Ltd. was established in 2007, located in Chhatrapati Sambhajinagar (Aurangabad), Maharashtra, with the intention to provide high-quality aggregates and manufactured sand for industrial and infrastructure projects.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Our activity is to manufacture stone aggregates of different sizes and Artificial Sand (P-Sand and M-Sand). We have located our state of art plant facility and mine at Bidkin Aurangabad. Technically we are competent to supply all type of aggregates with excellent quality of graded aggregates produced with advanced technology for the industry.
+                We specialize in manufacturing stone aggregates with advanced technological machinery to produce excellent quality graded aggregates and manufactured sand (P-Sand and M-Sand) for our esteemed clients and iconic projects. Our manufacturing facility and mines are located at Bidkin, Chhatrapati Sambhajinagar (Aurangabad).
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                We are committed to reducing environmental impact by running our plant on 100% Solar Energy.
               </p>
               <div className="mt-10 grid gap-8 md:grid-cols-2">
                 <div className="rounded-2xl bg-primary/5 p-8">
