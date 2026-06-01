@@ -7,11 +7,11 @@ const nextConfig = {
     unoptimized: true,
   },
   allowedDevOrigins: [
-    '*.replit.dev',
-    '*.repl.co',
-    '*.replit.app',
+    'localhost',
     '127.0.0.1',
-  ],
+    process.env.REPLIT_DEV_DOMAIN,
+    `.${process.env.REPLIT_DEV_DOMAIN?.split('.').slice(1).join('.')}`,
+  ].filter(Boolean),
 }
 
 export default nextConfig
