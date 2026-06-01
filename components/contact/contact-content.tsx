@@ -368,6 +368,35 @@ export function ContactContent() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="py-24 lg:py-32 bg-background">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <div className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+              Find Us
+            </div>
+            <h2 className="font-serif text-3xl text-foreground md:text-4xl">
+              Our Location
+            </h2>
+            <p className="mt-3 text-base text-muted-foreground">
+              Bidkin, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-md">
+            <iframe
+              src="https://maps.google.com/maps?q=Deogiri+Stone+Product+Pvt+Ltd,+Bidkin,+Chhatrapati+Sambhajinagar&ll=19.8658829,75.3360152&z=13&output=embed"
+              width="100%"
+              height="480"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Deogiri Stone Product Pvt. Ltd. Location"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
