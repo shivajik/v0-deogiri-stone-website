@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "MypnGrgrSqLvCnGqFvAAR"
+uri = "file://public/images/p-sand.png"
+type = "image"
+title = "p sand close up"
+
+[[generated]]
+id = "ZabQSnYRWMs4JbF-f8y06"
+uri = "file://public/images/m-sand.png"
+type = "image"
+title = "m sand close up"
+
+[[generated]]
+id = "cQtgqBpvrFRMilMD4Vr4u"
+uri = "file://public/images/crush-sand.png"
+type = "image"
+title = "crush sand close up"
+
+[[generated]]
+id = "f1WBYDJ3UfcGnStxr58f-"
+uri = "file://public/images/stone-dust.png"
+type = "image"
+title = "stone dust close up"

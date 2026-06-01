@@ -148,72 +148,51 @@ const sandTypes = [
     name: "P SAND",
     label: "Plastering Sand",
     size: "0 – 2.36 mm",
-    bg: "from-amber-100 to-amber-200",
-    border: "border-amber-300",
-    dot: "bg-amber-400",
-    pattern: "radial-gradient(ellipse at 30% 40%, #d97706 1px, transparent 1px), radial-gradient(ellipse at 70% 60%, #b45309 1px, transparent 1px), radial-gradient(ellipse at 50% 80%, #92400e 0.5px, transparent 0.5px)",
+    image: "/images/p-sand.png",
   },
   {
     name: "M SAND",
     label: "Master Sand",
     size: "2.36 – 5.00 mm",
-    bg: "from-stone-200 to-stone-300",
-    border: "border-stone-400",
-    dot: "bg-stone-500",
-    pattern: "radial-gradient(ellipse at 20% 30%, #78716c 1.5px, transparent 1.5px), radial-gradient(ellipse at 60% 70%, #57534e 1.5px, transparent 1.5px), radial-gradient(ellipse at 80% 20%, #44403c 1px, transparent 1px)",
+    image: "/images/m-sand.png",
   },
   {
     name: "CRUSH SAND",
     label: "Crushed Sand",
     size: "0 – 4.75 mm",
-    bg: "from-orange-100 to-orange-200",
-    border: "border-orange-300",
-    dot: "bg-orange-500",
-    pattern: "radial-gradient(ellipse at 40% 50%, #c2410c 2px, transparent 2px), radial-gradient(ellipse at 75% 25%, #9a3412 1.5px, transparent 1.5px), radial-gradient(ellipse at 20% 75%, #7c2d12 1px, transparent 1px)",
+    image: "/images/crush-sand.png",
   },
   {
     name: "DUST",
     label: "Stone Dust",
     size: "0 – 3.68 mm",
-    bg: "from-neutral-200 to-neutral-300",
-    border: "border-neutral-400",
-    dot: "bg-neutral-500",
-    pattern: "radial-gradient(ellipse at 50% 50%, #737373 0.5px, transparent 0.5px), radial-gradient(ellipse at 30% 70%, #525252 0.5px, transparent 0.5px), radial-gradient(ellipse at 70% 30%, #404040 0.5px, transparent 0.5px)",
+    image: "/images/stone-dust.png",
   },
 ];
 
 function SandCollage() {
   return (
-    <div className="grid grid-cols-2 gap-3 rounded-2xl overflow-hidden">
+    <div className="grid grid-cols-2 gap-3">
       {sandTypes.map((type) => (
         <div
           key={type.name}
-          className={`relative flex flex-col justify-between rounded-xl border ${type.border} bg-gradient-to-br ${type.bg} p-5 overflow-hidden`}
-          style={{ minHeight: "160px" }}
+          className="relative overflow-hidden rounded-xl"
+          style={{ minHeight: "180px" }}
         >
-          {/* Particle texture overlay */}
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: type.pattern,
-              backgroundSize: "18px 18px",
-            }}
+          <Image
+            src={type.image}
+            alt={type.name}
+            fill
+            className="object-cover"
           />
-
-          {/* Top: dot + name */}
-          <div className="relative z-10 flex items-center gap-2">
-            <span className={`h-2.5 w-2.5 rounded-full ${type.dot} shrink-0`} />
-            <span className="text-xs font-semibold uppercase tracking-widest text-foreground/60">
-              {type.label}
-            </span>
-          </div>
-
-          {/* Bottom: type name + size */}
-          <div className="relative z-10 mt-4">
-            <div className="font-serif text-xl font-semibold text-foreground leading-tight">
+          {/* Gradient overlay at bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+          {/* Labels */}
+          <div className="absolute bottom-0 left-0 right-0 p-3">
+            <div className="font-serif text-base font-semibold text-white leading-tight">
               {type.name}
             </div>
-            <div className="mt-1 inline-block rounded-full bg-foreground/10 px-3 py-0.5 text-xs font-medium text-foreground/70 tracking-wide">
+            <div className="mt-0.5 text-xs text-white/75 tracking-wide">
               {type.size}
             </div>
           </div>
