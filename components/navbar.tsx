@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -50,36 +51,17 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="relative z-50 flex items-center gap-3 group" onClick={closeMobile}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              className="h-6 w-6"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <div className="flex flex-col">
-            <span
-              className={`font-serif text-xl leading-tight tracking-tight transition-colors duration-300 ${
-                isScrolled || isMobileOpen ? "text-[hsl(30,20%,96%)]" : "text-card"
-              }`}
-            >
-              Deogiri Stone
-            </span>
-            <span
-              className={`text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 ${
-                isScrolled || isMobileOpen ? "text-[hsl(28,40%,58%)]" : "text-card/70"
-              }`}
-            >
-              Premium Aggregates
-            </span>
-          </div>
+        <Link href="/" className="relative z-50" onClick={closeMobile}>
+          <Image
+            src="/images/logo-light.png"
+            alt="Deogiri Stone Products Pvt. Ltd."
+            width={0}
+            height={0}
+            sizes="160px"
+            className="h-14 w-auto object-contain"
+            style={{ width: "auto" }}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

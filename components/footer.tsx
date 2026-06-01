@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
@@ -23,25 +24,16 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-6 w-6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-serif text-xl text-accent-foreground">
-                  Deogiri Stone
-                </span>
-              </div>
+            <div>
+              <Image
+                src="/images/logo-light.png"
+                alt="Deogiri Stone Products Pvt. Ltd."
+                width={0}
+                height={0}
+                sizes="180px"
+                className="h-16 w-auto object-contain"
+                style={{ width: "auto" }}
+              />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-accent-foreground/70">
               Your trusted partner for premium construction aggregates. We deliver
