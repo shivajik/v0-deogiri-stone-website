@@ -30,7 +30,7 @@ const products = [
     title: "Fine Aggregates (Sand)",
     description:
       "High-quality manufactured sand produced using UK Patent washing technology to ensure superior strength and durability while protecting river beds.",
-    image: "/images/fine-aggregates.jpg",
+    image: null,
     features: [
       "M-Sand (Master Sand) - Higher flexural strength and better abrasion resistance",
       "P-Sand (Plastering Sand) - Ideal substitute for river sand in construction and plastering",
@@ -143,6 +143,86 @@ export function ProductsContent() {
   );
 }
 
+const sandTypes = [
+  {
+    name: "P SAND",
+    label: "Plastering Sand",
+    size: "0 – 2.36 mm",
+    bg: "from-amber-100 to-amber-200",
+    border: "border-amber-300",
+    dot: "bg-amber-400",
+    pattern: "radial-gradient(ellipse at 30% 40%, #d97706 1px, transparent 1px), radial-gradient(ellipse at 70% 60%, #b45309 1px, transparent 1px), radial-gradient(ellipse at 50% 80%, #92400e 0.5px, transparent 0.5px)",
+  },
+  {
+    name: "M SAND",
+    label: "Master Sand",
+    size: "2.36 – 5.00 mm",
+    bg: "from-stone-200 to-stone-300",
+    border: "border-stone-400",
+    dot: "bg-stone-500",
+    pattern: "radial-gradient(ellipse at 20% 30%, #78716c 1.5px, transparent 1.5px), radial-gradient(ellipse at 60% 70%, #57534e 1.5px, transparent 1.5px), radial-gradient(ellipse at 80% 20%, #44403c 1px, transparent 1px)",
+  },
+  {
+    name: "CRUSH SAND",
+    label: "Crushed Sand",
+    size: "0 – 4.75 mm",
+    bg: "from-orange-100 to-orange-200",
+    border: "border-orange-300",
+    dot: "bg-orange-500",
+    pattern: "radial-gradient(ellipse at 40% 50%, #c2410c 2px, transparent 2px), radial-gradient(ellipse at 75% 25%, #9a3412 1.5px, transparent 1.5px), radial-gradient(ellipse at 20% 75%, #7c2d12 1px, transparent 1px)",
+  },
+  {
+    name: "DUST",
+    label: "Stone Dust",
+    size: "0 – 3.68 mm",
+    bg: "from-neutral-200 to-neutral-300",
+    border: "border-neutral-400",
+    dot: "bg-neutral-500",
+    pattern: "radial-gradient(ellipse at 50% 50%, #737373 0.5px, transparent 0.5px), radial-gradient(ellipse at 30% 70%, #525252 0.5px, transparent 0.5px), radial-gradient(ellipse at 70% 30%, #404040 0.5px, transparent 0.5px)",
+  },
+];
+
+function SandCollage() {
+  return (
+    <div className="grid grid-cols-2 gap-3 rounded-2xl overflow-hidden">
+      {sandTypes.map((type) => (
+        <div
+          key={type.name}
+          className={`relative flex flex-col justify-between rounded-xl border ${type.border} bg-gradient-to-br ${type.bg} p-5 overflow-hidden`}
+          style={{ minHeight: "160px" }}
+        >
+          {/* Particle texture overlay */}
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: type.pattern,
+              backgroundSize: "18px 18px",
+            }}
+          />
+
+          {/* Top: dot + name */}
+          <div className="relative z-10 flex items-center gap-2">
+            <span className={`h-2.5 w-2.5 rounded-full ${type.dot} shrink-0`} />
+            <span className="text-xs font-semibold uppercase tracking-widest text-foreground/60">
+              {type.label}
+            </span>
+          </div>
+
+          {/* Bottom: type name + size */}
+          <div className="relative z-10 mt-4">
+            <div className="font-serif text-xl font-semibold text-foreground leading-tight">
+              {type.name}
+            </div>
+            <div className="mt-1 inline-block rounded-full bg-foreground/10 px-3 py-0.5 text-xs font-medium text-foreground/70 tracking-wide">
+              {type.size}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function ProductCard({
   product,
   isEven,
@@ -168,14 +248,18 @@ function ProductCard({
         >
           {/* Image */}
           <div className={`relative ${isEven ? "" : "lg:order-2"}`}>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-              <Image
-                src={product.image || "/placeholder.svg"}
-                alt={product.title}
-                fill
-                className="object-cover"
-              />
-            </div>
+            {product.image ? (
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ) : (
+              <SandCollage />
+            )}
           </div>
 
           {/* Content */}
