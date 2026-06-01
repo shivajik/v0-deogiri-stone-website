@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, ArrowRight } from "lucide-react";
+import { Menu, X, Phone, ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -100,7 +100,10 @@ export function Navbar() {
             asChild
             className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6"
           >
-            <Link href="/contact">Get Free Quote</Link>
+            <a href="/DeogiriStone-Brochure.pdf" download="DeogiriStone-Brochure.pdf">
+              <Download className="mr-2 h-4 w-4" />
+              Download Brochure
+            </a>
           </Button>
         </div>
 
@@ -208,10 +211,10 @@ export function Navbar() {
               size="lg"
               className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-6 text-base font-semibold"
             >
-              <Link href="/contact" onClick={closeMobile}>
-                Get Free Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              <a href="/DeogiriStone-Brochure.pdf" download="DeogiriStone-Brochure.pdf" onClick={closeMobile}>
+                <Download className="mr-2 h-5 w-5" />
+                Download Brochure
+              </a>
             </Button>
           </div>
         </div>

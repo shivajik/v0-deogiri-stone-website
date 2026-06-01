@@ -51,16 +51,6 @@ export function CtaSection() {
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button
             asChild
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-8 py-6 text-base font-semibold"
-          >
-            <Link href="/contact">
-              Get Your Free Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-          <Button
-            asChild
             variant="outline"
             size="lg"
             className="border-card/30 text-card hover:bg-card/10 rounded-lg px-8 py-6 text-base bg-transparent"
