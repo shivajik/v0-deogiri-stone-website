@@ -65,12 +65,12 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 hover:bg-[hsl(28,40%,58%)]/10 ${
+              className={`rounded-lg px-5 py-2 text-sm font-medium tracking-wide transition-all duration-300 hover:bg-[hsl(28,40%,58%)]/10 ${
                 pathname === link.href
                   ? isScrolled
                     ? "text-primary"
