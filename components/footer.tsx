@@ -114,7 +114,7 @@ export function Footer() {
               <li>
                 <div className="flex items-start gap-3 text-sm text-accent-foreground/70">
                   <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                  Maharashtra, India
+                  Bidkin, Maharashtra
                 </div>
               </li>
             </ul>
