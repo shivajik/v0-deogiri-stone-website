@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
@@ -68,6 +68,17 @@ export function CtaSection() {
             <a href="tel:+919423779665">
               <Phone className="mr-2 h-5 w-5" />
               +91 9423779665
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="border-primary text-primary hover:bg-primary/10 rounded-lg px-8 py-6 text-base font-semibold bg-card/5"
+          >
+            <a href="/DeogiriStone-Brochure.pdf" download="DeogiriStone-Brochure.pdf">
+              <Download className="mr-2 h-5 w-5" />
+              Download Brochure
             </a>
           </Button>
         </div>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
@@ -134,6 +134,17 @@ export function ProductsContent() {
               <a href="tel:+919423779665">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Us Now
+              </a>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-primary text-primary hover:bg-primary/10 rounded-lg px-8 bg-transparent"
+            >
+              <a href="/DeogiriStone-Brochure.pdf" download="DeogiriStone-Brochure.pdf">
+                <Download className="mr-2 h-5 w-5" />
+                Download Brochure
               </a>
             </Button>
           </div>
