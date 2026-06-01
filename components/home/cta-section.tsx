@@ -65,9 +65,9 @@ export function CtaSection() {
             size="lg"
             className="border-card/30 text-card hover:bg-card/10 rounded-lg px-8 py-6 text-base bg-transparent"
           >
-            <a href="tel:+919028208883">
+            <a href="tel:+919423779665">
               <Phone className="mr-2 h-5 w-5" />
-              +91 9028208883
+              +91 9423779665
             </a>
           </Button>
         </div>

@@ -131,7 +131,7 @@ export function ProductsContent() {
               size="lg"
               className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 rounded-lg px-8 bg-transparent"
             >
-              <a href="tel:+919028208883">
+              <a href="tel:+919423779665">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Us Now
               </a>

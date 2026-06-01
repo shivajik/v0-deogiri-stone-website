@@ -6,7 +6,7 @@ import { ContactContent } from "@/components/contact/contact-content";
 export const metadata: Metadata = {
   title: "Contact Us | Deogiri Stone - Get a Free Quote",
   description:
-    "Contact Deogiri Stone for a free consultation and competitive pricing on premium construction aggregates. Call +91 9028208883 or fill out our contact form.",
+    "Contact Deogiri Stone for a free consultation and competitive pricing on premium construction aggregates. Call +91 9423779665 or fill out our contact form.",
 };
 
 export default function ContactPage() {

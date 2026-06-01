@@ -106,13 +106,13 @@ export function Navbar() {
         {/* CTA + Phone */}
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="tel:+919028208883"
+            href="tel:+919423779665"
             className={`flex items-center gap-2 text-sm font-medium transition-colors duration-300 ${
               isScrolled ? "text-[hsl(30,20%,96%)]" : "text-card/90"
             }`}
           >
             <Phone className="h-4 w-4" />
-            +91 9028208883
+            +91 9423779665
           </a>
           <Button
             asChild
@@ -185,7 +185,7 @@ export function Navbar() {
 
           {/* Phone */}
           <a
-            href="tel:+919028208883"
+            href="tel:+919423779665"
             className="flex items-center gap-3 rounded-xl px-5 py-4 text-[hsl(30,20%,96%)] hover:bg-[hsl(28,40%,58%)]/5"
             style={{
               transitionProperty: "all",
@@ -204,7 +204,7 @@ export function Navbar() {
                 Call Us Now
               </span>
               <span className="text-base font-semibold text-[hsl(30,20%,96%)]">
-                +91 9028208883
+                +91 9423779665
               </span>
             </div>
           </a>

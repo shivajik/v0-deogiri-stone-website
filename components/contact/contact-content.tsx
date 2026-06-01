@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 9028208883"],
-    action: "tel:+919028208883",
+    details: ["+91 9423779665"],
+    action: "tel:+919423779665",
     actionLabel: "Call Now",
   },
   {
@@ -348,7 +348,7 @@ export function ContactContent() {
                   For urgent requirements, call us directly:
                 </p>
                 <a
-                  href="tel:+919028208883"
+                  href="tel:+919423779665"
                   className="mt-4 flex items-center gap-3 rounded-lg bg-primary/10 p-4 transition-colors hover:bg-primary/20"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
@@ -356,7 +356,7 @@ export function ContactContent() {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-card-foreground">
-                      +91 9028208883
+                      +91 9423779665
                     </div>
                     <div className="text-xs text-muted-foreground">
                       Available Mon-Sat, 8AM-7PM

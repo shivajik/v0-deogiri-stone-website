@@ -86,7 +86,7 @@ export function Hero() {
               size="lg"
               className="w-full border-card/30 text-card hover:bg-card/10 rounded-lg px-8 py-6 text-base bg-transparent sm:w-auto"
             >
-              <a href="tel:+919028208883">
+              <a href="tel:+919423779665">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
               </a>
