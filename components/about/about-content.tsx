@@ -122,7 +122,7 @@ export function AboutContent() {
                   </div>
                   <h3 className="font-serif text-xl text-foreground">Our Vision</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    To meet customer requirement & satisfaction by providing service on time, every time, while maintaining high standards of quality management system.
+                    To be the most trusted and sustainable provider of stone aggregates and manufactured sand, driving innovation in construction materials and setting new benchmarks for quality, environmental responsibility, and community development. We envision a future where our products not only build stronger infrastructure but also contribute to a greener, more resilient world.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-primary/5 p-8">
@@ -131,7 +131,7 @@ export function AboutContent() {
                   </div>
                   <h3 className="font-serif text-xl text-foreground">Our Mission</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    To manufacture high quality products that are fit-to-use and durable, through employee motivation, participation and continuous improvement in our systems.
+                    To provide high-quality stone aggregates and manufactured sand that meet the evolving needs of the construction industry, while upholding the highest standards of sustainability, safety, and innovation. We are committed to delivering reliable materials that strengthen infrastructure, support economic growth, and contribute to building a better future for communities.
                   </p>
                 </div>
               </div>
