@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: ["Maharashtra, India"],
+    details: ["Bidkin, Maharashtra"],
     action: undefined,
     actionLabel: undefined,
   },
